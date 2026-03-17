@@ -49,8 +49,7 @@ export default async function PostsPage({ searchParams }: { searchParams: { stat
                 <td style={{ padding:'10px 14px' }}><span style={{ background:statusColors[p.status], color:statusText[p.status], padding:'3px 8px', borderRadius:4, fontSize:11, fontWeight:600 }}>{statusLabel[p.status]}</span></td>
                 <td style={{ padding:'10px 14px' }}>
                   <div style={{ display:'flex', gap:5 }}>
-                    <Link href={`/admin/posts/${p.id}/edit`} style={{ padding:'4px 10px', border:'1.5px solid #e7e5e4', borderRadius:6, background:'#fff', fontSize:11, fontWeight:600 }}>✏️ Editar</Link>
-                  </div>
+                    <Link href={`/admin/posts/${p.id}/edit`} style={{ padding:'4px 10px', border:'1.5px solid #e7e5e4', borderRadius:6, background:'#fff', fontSize:11, fontWeight:600 }}>✏️ Editar</Link>                  </div>
                 </td>
               </tr>
             ))}
